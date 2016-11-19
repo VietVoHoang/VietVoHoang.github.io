@@ -1,0 +1,556 @@
+/*
+basesize=16
+target= gia tri mong muon / base size
+
+*/
+
+*,
+html {
+    /* không xài giá trị mặc định */
+    padding: 0px;
+    margin: 0px;
+    /*tính width theo border*/
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.25em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h2 {
+    color: red;
+    font-size: 1.1875em;
+}
+
+h3 {
+    font-size: 1.125em;
+}
+
+header h3 {
+    font-size:
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.nopadding {
+    padding: 0 0;
+}
+
+header {
+    font-weight: bold;
+    color: white !important;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 40px 100px;
+    text-align: center;
+    /*margin-bottom: 50px;*/
+    background-color: chocolate;
+    /* luôn sử dung màu backup cho hình background */
+}
+
+
+/* h3 là con trực tiếp của header */
+
+header> h3 {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+/* speudo class */
+
+a:hover {
+    text-decoration: underline;
+}
+
+header ul {
+    list-style-type: none;
+    margin-bottom: 100px;
+}
+
+header li {
+    display: inline-block;
+    /*padding: 5px;*/
+    margin: 0px 15px;
+}
+
+header nav ul a {
+    color: white;
+}
+
+
+/**/
+
+section#personal_info img {
+    height: 200px;
+    -ms-border-radius: 10px 150px;
+    -webkit-border-radius: 10px 150px;
+    -moz-border-radius: 10px 150px;
+    -o-border-radius: 10px 150px;
+    border-radius: 10px 150px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#personal_info_details {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section#personal_info {
+    display: block;
+    height: 200px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    line-height: 200px !important;
+    vertical-align: middle;
+    background-color:
+}
+
+section#personal_info h2 {
+    font-size: 1.5em;
+    color: black!important;
+}
+
+section#personal_info #details {
+    width: 80%;
+    height: 200px;
+    background-color: white;
+    display: inline-block;
+    line-height: normal;
+    margin: 0px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*button*/
+
+.link_button {
+    border: 1px solid aquamarine;
+    background-color: aquamarine;
+    color: white;
+    padding: 5px;
+}
+
+.link_button:hover {
+    text-decoration: none;
+    border: 1px solid blue;
+}
+
+a#btn_About {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/*project_info*/
+
+
+/*section#project_info {
+    text-align: center;
+}*/
+
+section#project_info> h2 {
+    font-size: 1.875em;
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 130px;
+    line-height: 130px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/*project_detail*/
+
+div.project_details {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 70%;
+    display: block;
+    margin: 0px auto 50px;
+}
+
+.project_details ul li {
+    list-style-position: inside;
+    list-style-type: circle;
+    white-space: nowrap;
+}
+
+.project_details ul {
+    line-height: 25px;
+    text-indent: 25px;
+}
+
+.project_details> img {
+    display: inline-block;
+    width: 200px;
+    vertical-align: middle;
+}
+
+.project_details_info {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+
+/*footer*/
+
+footer {
+    text-align: center;
+}
+
+footer #fb {
+    color: blue;
+}
+
+footer #gg {
+    color: red;
+}
+
+footer #twitter {
+    color: aqua;
+}
+
+
+/*format for project list page*/
+
+section#project_container {
+    display: block;
+    margin-bottom: 20px;
+}
+
+section#project_list {
+    float: left;
+    width: 75%;
+    text-align: center;
+}
+
+aside#project_benefit {
+    float: left;
+    width: 25%;
+}
+
+aside#project_benefit h1 {
+    font-size: 1.25em;
+    /*change form of text*/
+    text-transform: uppercase;
+}
+
+aside#project_benefit ul {
+    list-style-position: inside;
+    text-indent: 25px;
+    list-style-type: georgian;
+}
+
+section#project_container:after {
+    display: block;
+    content: ' ';
+    clear: both;
+}
+
+#project_list_wrapper {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.project_item {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    /*top left*/
+    /*box-shadow: -3px -3px 10px #ccc;*/
+    /*bottom right*/
+    box-shadow: 3px 3px 10px #ccc;
+    /*all*/
+    /*box-shadow: 0px 0px 10px #ccc;*/
+}
+
+.project_item img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.project_item_detail {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.project_item_detail ul {
+    list-style-position: inside;
+    text-indent: 5px;
+}
+
+.project_item_detail li {
+    white-space: nowrap;
+}
+
+
+/*format for table in experience page*/
+
+section#experience_wrapper {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+section#work,
+section#project_done {
+    margin-bottom: 100px;
+}
+
+table#tbl_work {
+    margin: 5px auto;
+    text-align: left;
+    border: 3px solid blue;
+    border-spacing: 0px;
+    border-radius: 10px;
+}
+
+
+/*table#tbl_work thead tr th:nth-child(1), table#tbl_work thead tr th:nth-child(2), table#tbl_work thead tr th:nth-child(3){
+    border-radius: 0px 0px 15px 15px;
+}*/
+
+table#tbl_work thead tr th {
+    padding: 5px;
+    border-bottom: 3px solid blue;
+    border-radius: 0px 0px 15px 15px;
+    border-bottom: 1px solid blue;
+}
+
+table#tbl_work tbody tr td {
+    padding: 5px;
+}
+
+table#tbl_work tfoot tr td {
+    padding: 5px;
+    text-align: center;
+    color: brown;
+}
+
+table#tbl_work tbody tr:nth-child(odd) {
+    background-color: azure;
+}
+
+table#tbl_work tbody tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+table#tbl_work tbody tr:hover {
+    background-color: coral;
+    color: white;
+}
+
+table#tbl_PrjDone {
+    margin: 5px auto;
+    text-align: center;
+    /*chi co tac dung khi border-collapse la seperate*/
+    border-collapse: separate;
+    border-spacing: 15px 0px;
+}
+
+table#tbl_PrjDone thead tr th {
+    border-bottom: 3px solid blue;
+    color: blue;
+}
+
+table#tbl_PrjDone tbody tr td {
+    text-align: left;
+    padding: 5px;
+}
+
+table#tbl_PrjDone tbody tr td:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+table#tbl_PrjDone tbody tr td:nth-child(even) {
+    background-color: aquamarine;
+}
+
+table#tbl_PrjDone tfoot tr td {
+    background-color: bisque;
+}
+
+
+/*format tbl_test*/
+
+/*#tbl_test {
+    border: 0.5px solid black;
+    text-align: center;
+    margin: 5px auto;
+    border-spacing: 0px;
+}
+
+#tbl_test tbody tr td {
+    border: 0.5px solid black;
+    padding: 5px;
+}
+
+#tbl_test thead tr td {
+    border: 1px solid black;
+    padding: 5px;
+}*/
+
+
+/*Format form*/
+
+section#contact_form {
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 12px #ccc;
+    position: relative;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+textarea,
+select {
+    border: none;
+    font-size: 1em;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    margin-bottom: 20px
+}
+
+label.light {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+button {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #3ac162;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+button[type='submit'] {
+    background-color: #4bc970;
+    color: white;
+}
+
+button[type='reset'] {
+    background-color: #ebebeb;
+    color: #4bc970;
+}
+
+.number {
+    background-color: #4bc970;
+    color: white;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.75em;
+    margin-right: 4px;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 30px;
+}
+
+
+/*Format for address*/
+
+address i {
+    display: inline-block;
+}
+
+address {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    line-height: 30px;
+    border: 1px solid red;
+    border-radius: 100%;
+    /**/
+    position: absolute;
+    top: -20px;
+    left: 90%;
+}
+
+
+/*format fixed contact*/
+
+#fixed_panel {
+    position: fixed;
+    top: 50%;
+}
+
+#fixed_panel div {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 150px;
+    /*margin: 0 auto;*/
+}
+
+#fb_fixed {
+    background-color: antiquewhite;
+}
+
+#gg_fixed {
+    background-color: azure;
+}
+#gg_fixed i {
+    color: red;
+}
+
+#twitter_fixed {
+    background-color: brown
+}
+
+#twitter_fixed i {
+    color: aqua;
+}

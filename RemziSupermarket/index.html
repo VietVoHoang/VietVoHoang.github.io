@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <nav id="top_nav">
+        <ul>
+            <li>
+                <a href="#">Hotline(19001000)</a>
+            </li>
+            <li class="dropdown_menu">
+                <a href="#">
+                    <i class="fa fa-question-circle-o"></i>Hỏi đáp
+                </a>
+                <ul class="dropdown_content dropdown_content_left">
+                    <li><a href="#">Hoi dap ve dich vu</a></li>
+                    <li><a href="#">Hoi dap ve km</a></li>
+                    <li><a href="#">Hoi dap ve sp</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-mobile"></i>Ứng dụng
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-flag"></i>Thông báo
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-question-circle-o"></i>Hỗ trợ
+                </a>
+            </li>
+            <li class="dropdown_menu">
+                <a href="#">
+                    <i class="fa fa-question-circle-o"></i>Đăng kí
+                    <ul class="dropdown_content dropdown_content_right">
+                        <li>
+                            <form class="user_form">
+                                <h4>Dang Ky Tai Khoan</h4>
+                                <div class="user_input">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <input type="email" placeholder="Nhap email">
+                                </div>
+                                <div class="user_input">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" placeholder="Nhap ho ten">
+                                </div>
+                                <div class="user_input">
+                                    <i class="fa fa-key"></i>
+                                    <input type="password" placeholder="Nhap password">
+                                </div>
+                                <button type="submit">DANG KY TAI KHOAN</button>
+                            </form>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+            <li class="dropdown_menu">
+                <a href="#">
+                    <i class="fa fa-question-circle-o"></i>Đăng nhập
+                    <ul class="dropdown_content dropdown_content_right">
+                        <li>
+                            <form class="user_form">
+                                <div id="gg-login">
+                                    <i class="fa fa-google" aria-hidden="true"></i> Đăng nhập với Google
+                                </div>
+                                <div id="fb-login">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i> Đăng nhập với Facebook
+                                </div>
+                                <h4>Đăng nhập với email</h4>
+                                <div class="user_input">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <input type="email" placeholder="Nhap email">
+                                </div>
+                                <div class="user_input">
+                                    <i class="fa fa-key"></i>
+                                    <input type="password" placeholder="Nhap password">
+                                </div>
+                                <button type="submit">Đăng nhập</button>
+                            </form>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div id="header_wrapper">
+            <!--<i class="fa fa-bars" id="show_menu_button"></i>-->
+            <a href="/" id="logo">
+                <img src="img/supermarket_logo.jpg" />
+            </a>
+            <nav>
+                <span id="search_box">
+                    <button id="dropdown_product">San pham</button>
+                    <div id="dropdown_product_list">
+                        <ul>
+                            <li>Rao vat</li>
+                            <li>Hoi dap</li>
+                            <li>Cua hang</li>
+                        </ul>
+                    </div>
+                    <input type="text" placeholder="Tìm kiếm"/>
+                    <button id="button_search">Tim kiem</button>
+                </span>
+                <div id="notify">
+                    <div class="notify_icon" id="notify_icon_like">
+                        <i class="fa fa-heart-o"></i> Yeu thich
+                    </div>
+                    <div class="notify_icon" id="notify_icon_cart">
+                        <i class="fa fa-shopping-cart"></i> Gio hang
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="body_container">
+        <aside id="left_col">
+            <div id="main_menu">
+                <ul id="main_menu_list">
+                    <li>
+                        <a href="#"><i class="fa fa-star" aria-hidden="true"></i> Sản phẩm nổi bật</a>
+                    </li>
+                    <li class="left-sub-menu">
+                        <a href="#"><i class="fa fa-mobile" aria-hidden="true"></i> Điện thoại - viễn thông <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                        <div class="left-sub-menu-content">
+                            <ul>
+                                <li>
+                                    <img src="img/phone_lenovo.png">
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-android" aria-hidden="true"></i> Điện thoại Anroid</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-amazon" aria-hidden="true"></i> Điện thoại Amazon</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-apple" aria-hidden="true"></i> Điện thoại Apple</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Điện thoại Facebook</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img src="img/phone_samsung.png">
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-android" aria-hidden="true"></i> Điện thoại Anroid</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-amazon" aria-hidden="true"></i> Điện thoại Amazon</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-apple" aria-hidden="true"></i> Điện thoại Apple</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Điện thoại Facebook</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-laptop" aria-hidden="true"></i> Máy tính - linh kiện</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-television" aria-hidden="true"></i> Điện tử - điện máy</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Máy ảnh - máy quay</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-car" aria-hidden="true"></i> Ô tô - xe máy - xe đạp</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-diamond" aria-hidden="true"></i> Thời trang - phụ kiện</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-child" aria-hidden="true"></i> Mẹ và bé</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-building" aria-hidden="true"></i> Xây dựng - nội thất</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-book" aria-hidden="true"></i> Sách - quà tặng</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bicycle" aria-hidden="true"></i> Xe đạp - phụ kiện</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-university" aria-hidden="true"></i> Ngân hàng - tài chính</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-coffee" aria-hidden="true"></i> Thực phẩm - đồ uống</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="ads">
+                <img src="img/ad3.jpg">
+            </div>
+        </aside>
+        <section id="right_col">
+            <div id="main-banner">
+                <img src="img/carsourel_1.jpg">
+                <img src="img/carsourel_2.jpg">
+                <img src="img/carsourel_3.jpg">
+                <img src="img/carsourel_4.jpg">
+            </div>
+            <div class="product_show">
+                <div class="main-panel">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            Sản phẩm giảm giá
+                        </div>
+                        <ul>
+                            <li class="active-product-type">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <a href="#">Điện thoại</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                                <a href="#">Máy tính</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-car" aria-hidden="true"></i>
+                                <a href="#">Ô tô - Xe máy</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-child" aria-hidden="true"></i>
+                                <a href="#">Mẹ và bé</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-building" aria-hidden="true"></i>
+                                <a href="#">Xây dựng</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-television" aria-hidden="true"></i>
+                                <a href="#">Điện máy - TV</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                <a href="#">Thực phẩm - đồ uống</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <div class="item-box">
+                            <span class="discount">-50%</span>
+                            <img src="img/phone_oppo.png">
+                            <span class="item-price">
+                                  <span class="item-main-price">8.000.000 đ</span>
+                            <span class="item-old-price">9.000.000 đ</span>
+                            </span>
+                            <h4 class="item-title">Genius G-Pen 4500 (Bảng viết điện tử)</h4>
+                        </div>
+                        <div class="item-box">
+                            <img src="img/phone_htc.png">
+                            <span class="item-price">
+                                  <span class="item-main-price">8.000.000 đ</span>
+                            </span>
+                            <h4 class="item-title">Genius G-Pen 4500 (Bảng viết điện tử)</h4>
+                        </div>
+                        <div class="item-box">
+                            <span class="discount">-90%</span>
+                            <img src="img/phone_huwei.png">
+                            <span class="item-price">
+                                  <span class="item-main-price">8.000.000 đ</span>
+                            <span class="item-old-price">9.000.000 đ</span>
+                            </span>
+                            <h4 class="item-title">Genius G-Pen 4500 (Bảng viết điện tử)</h4>
+                        </div>
+                        <div class="item-box">
+                            <img src="img/phone_lenovo.png">
+                            <span class="item-price">
+                                  <span class="item-main-price">8.000.000 đ</span>
+                            <span class="item-old-price">9.000.000 đ</span>
+                            </span>
+                            <h4 class="item-title">OPPO 7 Edge</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product_show">
+                <div class="main-panel">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            Sản phẩm mới về
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <a href="#">Điện thoại</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                                <a href="#">Máy tính</a>
+                            </li>
+                            <li class="active-product-type">
+                                <i class="fa fa-car" aria-hidden="true"></i>
+                                <a href="#">Ô tô - Xe máy</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-child" aria-hidden="true"></i>
+                                <a href="#">Mẹ và bé</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-building" aria-hidden="true"></i>
+                                <a href="#">Xây dựng</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-television" aria-hidden="true"></i>
+                                <a href="#">Điện máy - TV</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                <a href="#">Thực phẩm - đồ uống</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <div class="item-box">
+                            <span class="discount">-50%</span>
+                            <img src="img/phone_oppo.png">
+                            <span class="item-price">
+                                  <span class="item-main-price">8.000.000 đ</span>
+                            <span class="item-old-price">9.000.000 đ</span>
+                            </span>
+                            <h4 class="item-title">Genius G-Pen 4500 (Bảng viết điện tử)</h4>
+                        </div>
+                        <div class="item-box">
+                            <img src="img/phone_htc.png">
+                            <span class="item-price">
+                                  <span class="item-main-price">8.000.000 đ</span>
+                            </span>
+                            <h4 class="item-title">Genius G-Pen 4500 (Bảng viết điện tử)</h4>
+                        </div>
+                        <div class="item-box">
+                            <span class="discount">-90%</span>
+                            <img src="img/phone_huwei.png">
+                            <span class="item-price">
+                                  <span class="item-main-price">8.000.000 đ</span>
+                            <span class="item-old-price">9.000.000 đ</span>
+                            </span>
+                            <h4 class="item-title">Genius G-Pen 4500 (Bảng viết điện tử)</h4>
+                        </div>
+                        <div class="item-box">
+                            <img src="img/phone_lenovo.png">
+                            <span class="item-price">
+                                  <span class="item-main-price">8.000.000 đ</span>
+                            <span class="item-old-price">9.000.000 đ</span>
+                            </span>
+                            <h4 class="item-title">OPPO 7 Edge</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="#">Chính sách</a>
+            </li>
+            <li>
+                <a href="#">Thỏa thuận sử dụng</a>
+            </li>
+            <li>
+                <a href="#">Giới thiệu</a>
+            </li>
+            <li>
+                <a href="#">Việc làm</a>
+            </li>
+        </ul>
+        &copy; 2016 by REMZI
+    </footer>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dropdown_product').hover(function () {
+                /*$('#dropdown_product_list').css({
+                    display: 'block'
+                });*/
+                $('#dropdown_product_list').show();
+                /*$('#dropdown_product_list').slideDown();*/
+            }, function () {
+                /*$('#dropdown_product_list').css({
+                    display: 'none'
+                });*/
+                $('#dropdown_product_list').hide();
+                /*$('#dropdown_product_list').slideUp();*/
+            });
+
+            $('#dropdown_product_list').hover(function () {
+                $('#dropdown_product_list').show();
+
+            }, function () {
+                $('#dropdown_product_list').hide();
+            });
+        })
+    </script>
+</body>
+
+</html>

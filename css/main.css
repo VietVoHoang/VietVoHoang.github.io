@@ -210,6 +210,10 @@ div.project_details {
     text-align: left;
 }
 
+.project_details_info a {
+    color: #000;
+}
+
 
 /*footer*/
 
@@ -396,6 +400,7 @@ table#tbl_PrjDone tfoot tr td {
 
 /*format tbl_test*/
 
+
 /*#tbl_test {
     border: 0.5px solid black;
     text-align: center;
@@ -543,6 +548,7 @@ address {
 #gg_fixed {
     background-color: azure;
 }
+
 #gg_fixed i {
     color: red;
 }

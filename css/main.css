@@ -362,6 +362,10 @@ table#tbl_work tbody tr:nth-child(even) {
     background-color: antiquewhite;
 }
 
+table#tbl_work tbody tr {
+    transition: all 0.5s;
+}
+
 table#tbl_work tbody tr:hover {
     background-color: coral;
     color: white;
@@ -395,6 +399,28 @@ table#tbl_PrjDone tbody tr td:nth-child(even) {
 
 table#tbl_PrjDone tfoot tr td {
     background-color: bisque;
+}
+
+
+/*format info*/
+
+#info {
+    display: block;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    background-color: yellow;
+    margin-top: 50px;
+}
+
+#tbl_info {
+    display: block;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+#tbl_info tr td {
+    width: 300px;
 }
 
 

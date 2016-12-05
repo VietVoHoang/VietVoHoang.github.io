@@ -64,7 +64,7 @@ a {
     /*70/1367.1*/
     
     padding-left: 5.120327700972862%;
-    padding-top: 15px;
+    padding-top: 10px;
     position: relative;
     float: left;
 }
@@ -140,11 +140,17 @@ a {
     overflow: hidden;
     /*    height: 100px;*/
 }
+#area-menu:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
 #area-menu ul {
     display: inline-block;
     width: 33%;
     padding-right: 50px;
     list-style: none;
+    float: left;
 }
 #area-menu ul li {
     padding-top: 5px;
@@ -154,9 +160,10 @@ a {
     text-decoration: none;
     color: #9aa0a2;
     text-transform: uppercase;
+    transition: all 0.3s;
 }
 #area-menu ul li a:hover {
-    color: aqua;
+    color: #81eedd;
 }
 #area-menu ul li a span {
     font-size: 0.85em;
@@ -176,16 +183,19 @@ header {
     top: 0;
     left: 0;
     height: 650px;
-    /*975/1367.1*/
-    
-    width: 71.31885012069344%;
+    width: 77%;
+    background: red;
     overflow: hidden;
+    transition: all 0.5s;
 }
 #cover-banner img {
     transition: all 0.3s;
     height: 650px;
-    width: 100%;
+    /*1083.42675px*/
+    
+    width: 125%;
     box-shadow: 5px 0px 20px #9aa0a2;
+    transition: all 0.5s;
 }
 #cover-banner-tittle {
     transition: all 0.3s;
@@ -206,6 +216,45 @@ header {
 #cover-banner-tittle h4 {
     font-weight: 0.5em;
     word-spacing: 5px;
+}
+#map-banner {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+    height: 650px;
+    /*500/1367.1*/
+    
+    width: 36.5737692926633%;
+    overflow: hidden;
+    /*background: yellow;*/
+}
+#map-banner img {
+    padding: 0;
+    margin: 0;
+    height: 650px;
+    width: 100%;
+    transform: translateX(130px);
+    transition: all 0.5s;
+}
+#map-banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12.5%, -50%);
+    padding: 30px 50px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    opacity: 1;
+    transition: all 0.5s;
+}
+#map-banner-title h3 {
+    word-spacing: 7px;
+}
+#map-banner-title h4 {
+    margin-top: 10px;
+    font-size: 0.75em;
 }
 .arrow_right_white {
     display: block;
@@ -239,42 +288,6 @@ header {
     top: 50%;
     left: 82%;
     transform: translateY(-50%);
-}
-#map-banner {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    transform: translateX(-100%);
-    height: 650px;
-    width: 500px;
-    overflow: hidden;
-}
-#map-banner img {
-    padding: 0;
-    margin: 0;
-    height: 650px;
-    width: 500px;
-    transform: translateX(80px);
-    transition: all 0.5s;
-}
-#map-banner-title {
-    position: absolute;
-    top: 50%;
-    left: 47%;
-    transform: translate(-30%, -50%);
-    padding: 30px 50px;
-    color: #000;
-    background-color: #fff;
-    text-align: center;
-    opacity: 1;
-    transition: all 0.5s;
-}
-#map-banner-title h3 {
-    word-spacing: 7px;
-}
-#map-banner-title h4 {
-    margin-top: 10px;
-    font-size: 0.75em;
 }
 #search-button {
     position: absolute;
@@ -318,7 +331,7 @@ header {
 .box-item >img {
     width: 100%;
     height: 100%;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 .box-item:hover img {
     transform: scale(1.1);
@@ -353,6 +366,7 @@ header {
     height: 1px;
     background-color: #000;
     position: relative;
+    cursor: pointer;
 }
 .begin-box .black-arrow:after {
     content: ' ';
@@ -368,7 +382,9 @@ header {
 }
 .slides {
     height: 341.775px;
-    width: 341.775px;
+    /*341.775*/
+    
+    width: 100%;
     position: relative;
     top: 0;
     left: 0;
@@ -383,14 +399,12 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    transition: all 0.2s;
     /*Define animation attributes*/
     
     animation-name: sample;
     animation-duration: 30s;
     animation-iteration-count: infinite;
-    transition: all 0s;
-    /*    animation-delay: 0s;*/
+    transition: all 0.3s;
 }
 @keyframes sample {
     0% {
@@ -586,7 +600,9 @@ header {
 
 /*format rated box*/
 #rated-box-container {
-    width: 341.775px;
+    /*341.775*/
+    
+    width: 100%;
     height: 341.775px;
     background-color: #39d1ba;
     color: #fff;
@@ -632,7 +648,10 @@ header {
 footer {
     display: block;
     height: 80px;
-    width: 1412px;
+    /*1412/1519*/
+    /*width: 92.95589203423305%;*/
+    
+    width: 90%;
     margin: auto;
     position: absolute;
     top: 1736px;

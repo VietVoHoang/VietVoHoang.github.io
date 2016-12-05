@@ -264,6 +264,9 @@
                  $('#area-menu').slideToggle();
              });*/
             $('#map-banner').hover(function () {
+                $('#cover-banner').css({
+                    'width': '63.4%'
+                })
                 $('#cover-banner img').css({
                     'transform': 'translateX(-90px)'
                 })
@@ -280,8 +283,11 @@
                     'transform': 'translateX(0)'
                 })
             }, function () {
+                $('#cover-banner').css({
+                    'width': '77%'
+                })
                 $('#cover-banner img').css({
-                    'transform': 'translateX(0)'
+                    'transform': 'translateX(0px)'
                 })
                 $('#cover-banner-tittle').css({
                     'position': 'absolute',
@@ -293,7 +299,7 @@
                     'opacity': 1
                 })
                 $('#map-banner img').css({
-                    'transform': 'translateX(80px)'
+                    'transform': 'translateX(130px)'
                 })
             })
         })

@@ -227,7 +227,7 @@ header {
     
     width: 36.5737692926633%;
     overflow: hidden;
-     background: #3b4b58;
+    background: #3b4b58;
 }
 #map-banner img {
     padding: 0;
@@ -478,13 +478,16 @@ header {
 .artical a {
     display: block;
     margin: auto;
-    width: 150px;
+    width: 175px;
     padding: 10px 20px;
     border: 1px solid #82bfd8;
     text-decoration: none;
     color: #82bfd8;
     margin-top: 20px;
     transition: all 0.3s;
+}
+.artical h2 {
+    font-size: 1.125em;
 }
 .artical a:hover {
     background: #82bfd8;
@@ -494,7 +497,7 @@ header {
     display: block;
     width: 80%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /*format villa info*/
@@ -638,7 +641,7 @@ header {
 }
 .rated-box h3 span {
     display: block;
-    font-size: 3em;
+    font-size: 2.5em;
     font-style: italic;
     line-height: normal;
     letter-spacing: 5px;
